@@ -78,6 +78,7 @@ class DayThemes {
             case cuaca.includes('fog'):
                 this.defaultThemesFolder.changeFolderName = 'kabut';
                 this.defaultThemesFolder.changeJumlahFile = this.jmlFile.kabut;
+                break;
                 
             case cuaca.includes('wind'):
                 this.defaultThemesFolder.changeFolderName = 'berangin';
