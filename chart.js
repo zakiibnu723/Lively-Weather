@@ -23,9 +23,9 @@ function generateChart(suhu, tanggal) {
                 data: suhu[0],
                 fill: true,
                 color: '#ffffff',
-                backgroundColor: 'rgba(96, 96, 96, 0.326)',
+                backgroundColor: 'rgba(0, 234, 242, 0.157)',
                 borderColor: '#FFEA00',
-                lineTension: 0.1,
+                lineTension: 0.6,
                 borderWidth: 1.5,
                 order: 2,
 
@@ -135,7 +135,7 @@ function generateChart(suhu, tanggal) {
                         display: true,
                         color: '#ffffff',
                         maxTicksLimit: 8,
-                        beginAtZero: false
+                        stepSize: 8
                     },
                     grid : {
                         color : '#70707053',
@@ -165,7 +165,8 @@ function generateChart(suhu, tanggal) {
             elements: {
                 point:{
                     radius: 2,
-                    hoverRadius: 5
+                    hoverRadius: 7,
+
                 }
             },
             tooltips: {
@@ -181,10 +182,11 @@ function generateChart(suhu, tanggal) {
                 }
             },
             
+            aspectRatio : false,
             responsive: true,
             maintainAspectRatio: false,
             width: 3200,
-            height: 200,
+            height: 250,
             chartArea: {
             backgroundColor: 'rgba(251, 85, 85, 0.4)'
     }
@@ -221,9 +223,10 @@ function addDataArray(chart, newData) {
 
 function displayChart(index, hiddenStatus) {
     chart.data.datasets[index].hidden = hiddenStatus
+    console.log(hiddenStatus)
     chart.update()
         chart.render({
-            duration: 800,  // Atur durasi animasi dalam milidetik
+            duration: 0,  // Atur durasi animasi dalam milidetik
             easing: 'easeInOutQuad',  // Atur jenis animasi (opsional)
         })
 

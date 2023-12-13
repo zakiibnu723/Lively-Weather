@@ -72,7 +72,7 @@ class DayThemes {
                 
             case cuaca.includes('cloudy'):
                 this.defaultThemesFolder.changeFolderName = 'berawan';
-                this.defaultThemesFolder.jmlFile = this.jmlFile.berawan;
+                this.defaultThemesFolder.changeJumlahFile = this.jmlFile.berawan;
                 break;
                 
             case cuaca.includes('fog'):
@@ -135,7 +135,7 @@ function updateTheme(sunriseTime, currentTime, sunsetTime, cuaca) {
         backgroundImage.src = `${url}.webp`;
         backgroundVideo.load();
 
-        console.log(theme.getURL(cuaca))
+        console.log(url)
         
     } else {
         let theme = new NightThemes()
@@ -145,7 +145,7 @@ function updateTheme(sunriseTime, currentTime, sunsetTime, cuaca) {
         backgroundImage.src = `${url}.webp`;
         backgroundVideo.load();
 
-        console.log(theme.getURL(cuaca))
+        console.log(url)
     }
 }
 
