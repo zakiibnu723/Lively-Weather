@@ -483,7 +483,7 @@ body {
 
 
 @media screen and (max-width: 480px) {
-    body {
+    html, body {
         height: 100dvh;
     }
     .container {
@@ -562,6 +562,8 @@ body {
     .forecast-daily {
         grid-area: c;
 
+        .forecast-desc {font-size: 9px;}
+
         .daycard-box {
             gap: 5px;
             
@@ -582,4 +584,6 @@ body {
         grid-area: d;
 
     }
+
+    .label p {font-size: 10px;}
 }
