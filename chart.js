@@ -15,7 +15,7 @@ function generateChart(suhu, tanggal) {
     const ctx = myChart.getContext('2d');
     chart = new Chart(ctx, {
         scaleFontColor: '#ffffff',
-        type: 'line',
+        type: 'bar',
         data: {
             labels: labels,
             datasets: [{

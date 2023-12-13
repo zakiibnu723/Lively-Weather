@@ -484,7 +484,7 @@ body {
 
 @media screen and (max-width: 480px) {
     html, body {
-        height: 100dvh;
+        height: 100%;
     }
     .container {
         padding: 7% 3% 3% 3%;
