@@ -188,7 +188,6 @@ async function checkWeather(wilayah) {
     // listAllDataHours[0][0].onDisplay();
 }
 
-// getListTime(data2);
 checkWeather(defaultWilayah);
 
 search.addEventListener('submit', function(event) {
@@ -215,6 +214,10 @@ dayCards.forEach((dayCard, index) => {
         resetAllDayCards();
         setOneDayCard(index); // Pass the index directly
     });
+
+    dayCard.addEventListener('dblclick', function() {
+        setOneDayCard(index);
+    })
 });
 
 function resetAllDayCards() {
