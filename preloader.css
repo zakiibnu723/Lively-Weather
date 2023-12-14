@@ -16,10 +16,10 @@
         color: white;
         font-family: Helvetica, sans-serif;
         letter-spacing: 1px;
-        font-size: 2vw;
+        font-size: 4vh;
         opacity: 0;
         position: absolute;
-        margin-left: -6vw;
+        margin-left: -12vh;
         top: 55%;
         left: 50%;
         z-index: 99;
