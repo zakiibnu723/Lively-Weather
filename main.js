@@ -20,7 +20,7 @@ backgroundVideo.addEventListener('loadstart', function() {
     backgroundLoader.style.opacity = 1;
     setTimeout(() => {
         textLoader.style.opacity = 1;
-    }, 1500);
+    }, 2000);
 })
 backgroundVideo.addEventListener('canplaythrough', function() {
     // setTimeout(function() {
