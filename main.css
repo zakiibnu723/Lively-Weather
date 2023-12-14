@@ -112,21 +112,21 @@ body {
     .github {
         display: flex;
 	align-items: center;
+	gap: 3px;
         
         & img {
             transition: all 200ms ease-in-out;
             width: 36px;
             height: 36px;
 
-            @media screen and (min-width: 481px) {
-                &:hover {
-                    filter: brightness(70%);
-                }
+            &:hover {
+                filter: brightness(70%);
             }
         }
 	    
 	& p {
 	    color: white;
+	    font-size: 12px;
 	}
     }
 }
@@ -541,6 +541,7 @@ body {
             
         .github {
 	    flex-direction: column;
+	    gap: 0;
 		
 	    & img {
                 width: 32px;
