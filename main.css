@@ -520,15 +520,23 @@ body {
 
     }
 
+    .background-loader {
+        & p {
+            font-size: 14px;
+            margin-left: -45px;
+        }
+    }
     .redirect {
         display: flex;
         align-items: center;
             
         .github svg {
-                width: 28px;
-                height: 28px;
+                margin-bottom: -5px;
+                margin-left: 16px;
+                width: 32px;
+                height: 32px;
         }
-        }
+    }
     .search {
         grid-area: a;
         grid-template-columns: 60%;
