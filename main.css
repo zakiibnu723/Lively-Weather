@@ -52,6 +52,12 @@ table {
 }
 
 
+
+
+
+
+@import "preloader.css";
+
 body {
     font-family: "Montserrat";
     width: 100%;
@@ -522,8 +528,8 @@ body {
 
     .background-loader {
         & p {
-            font-size: 10px;
-            margin-left: -36px;
+            font-size: 8px;
+            margin-left: -28px;
         }
     }
     .redirect {
