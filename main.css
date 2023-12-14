@@ -106,7 +106,7 @@ body {
 }
 
 .redirect {
-    position: absolute;
+    position: fixed;
     top: 12vw;
     left: 8vw;
 
