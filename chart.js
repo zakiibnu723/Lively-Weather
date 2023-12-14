@@ -2,6 +2,13 @@
 function generateChart(suhu, tanggal) {
     // Hapus chart lama jika ada
 
+    let screen = window.matchMedia("(max-width: 480px)");
+
+    if (screen.matches) {
+        suhu = suhu.filter((element, index, array) => index % 3 === 0)
+        tanggal = tanggal.filter((element, index, array) => index % 3 === 0)
+        labels = labels.filter((element, index, array) => index % 3 === 0)
+    }
 
 
     const labels = [
@@ -12,10 +19,11 @@ function generateChart(suhu, tanggal) {
         '16.00', '17.00', '18.00', '19.00', 
         '20.00', '21.00', '22.00', '23.00', 
     ]
+
     const ctx = myChart.getContext('2d');
     chart = new Chart(ctx, {
         scaleFontColor: '#ffffff',
-        type: 'bar',
+        type: 'line',
         data: {
             labels: labels,
             datasets: [{
@@ -135,7 +143,7 @@ function generateChart(suhu, tanggal) {
                         display: true,
                         color: '#ffffff',
                         maxTicksLimit: 8,
-                        stepSize: 8
+                        // stepSize: 1
                     },
                     grid : {
                         color : '#70707053',
@@ -151,6 +159,7 @@ function generateChart(suhu, tanggal) {
                     ticks: {
                         display: true,
                         color: '#ffffff',
+                        maxTicksLimit: 8,
                         stepSize: 4,
                         beginAtZero: true
                     },
