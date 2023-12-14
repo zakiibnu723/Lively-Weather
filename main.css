@@ -110,7 +110,8 @@ body {
     z-index: 999;
 
     .github {
-        display: inline-block;
+        display: flex;
+	align-items: center;
         
         & img {
             transition: all 200ms ease-in-out;
@@ -535,15 +536,20 @@ body {
     .redirect {
         display: flex;
         align-items: center;
-        margin-bottom: -5px;
+/*         margin-bottom: -5px; */
         margin-left: 16px;
             
-        .github img {
+        .github {
+	    flex-direction: column;
+		
+	    & img {
                 width: 32px;
                 height: 32px;
-        }
+            }
+		
+	    p { font-size: 7px; }
+	}
 
-	.github p { font-size: 10px; }
     }
 	
     .search {
