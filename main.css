@@ -110,7 +110,7 @@ body {
     z-index: 999;
 
     .github {
-        display: inline-block;
+        display: flex;
         
         & img {
             transition: all 200ms ease-in-out;
@@ -122,12 +122,11 @@ body {
                     filter: brightness(70%);
                 }
             }
-
+        }
+	    
 	& p {
 	    color: white;
 	}
-
-        }
     }
 }
 
@@ -534,7 +533,7 @@ body {
     }
 
     .redirect {
-        display: flex;
+/*         display: flex; */
         align-items: center;
         margin-bottom: -5px;
         margin-left: 16px;
