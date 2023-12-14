@@ -7,8 +7,8 @@
     width: 100%;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.202);
-    backdrop-filter: blur(7px) brightness(60%);
+    background-color: rgba(0, 0, 0, 0.502);
+    backdrop-filter: blur(7px) brightness(80%);
     transition: all 1s ease-in-out;
 
     & svg {
