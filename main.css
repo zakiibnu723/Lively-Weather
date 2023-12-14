@@ -107,7 +107,7 @@ body {
 
 .redirect {
     grid-area: a;
-    z-index: 999;
+    z-index: 1;
 
     .github {
         display: flex;
