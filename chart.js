@@ -188,7 +188,7 @@ function generateChart(suhu, tanggal) {
                 intersect: false,
             },
             
-            onTouch: function(event, elements) {
+            onTouchStart: function(event, elements) {
                 if (elements && elements.length > 0) {
                     const firstElement = elements[0];
 
