@@ -110,15 +110,16 @@ body {
     .github {
         display: inline-block;
         
-        & svg {
+        & img {
             transition: all 200ms ease-in-out;
             width: 36px;
             height: 36px;
-	z-index: 99999;
+		z-index: 99999;
 
             &:hover {
                 /* transform: scaleX(-1); */
-                & g { fill : rgb(209, 209, 209);}
+                filter: brightness(70%);
+
             }
         }
     }
