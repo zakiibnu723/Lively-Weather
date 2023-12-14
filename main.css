@@ -521,18 +521,14 @@ body {
     }
 
     .redirect {
-/* 	position: absolute;
-	top: 1.5%;
-	left: 2.5%; */
-	display: flex;
+        display: flex;
         align-items: center;
-	margin-top: 4px;
-	    
-	.github svg {
-            width: 30px;
-            height: 30px;
-	}
-    }
+            
+        .github svg {
+                width: 28px;
+                height: 28px;
+        }
+        }
     .search {
         grid-area: a;
         grid-template-columns: 60%;

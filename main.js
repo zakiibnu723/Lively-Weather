@@ -6,6 +6,8 @@
 
 const preloader = document.querySelector('.preloader-container');
 const backgroundLoader = document.querySelector('.background-loader')
+const textLoader = backgroundLoader.querySelector('p');
+
 
 window.onload = function() {
     setTimeout(function() {
@@ -16,11 +18,15 @@ window.onload = function() {
 
 backgroundVideo.addEventListener('loadstart', function() {
     backgroundLoader.style.opacity = 1;
-    
+    setTimeout(() => {
+        textLoader.style.opacity = 1;
+    }, 3000);
 })
 backgroundVideo.addEventListener('canplaythrough', function() {
     // setTimeout(function() {
     backgroundLoader.style.opacity = 0;
+    textLoaderstyle.opacity = 0;
+
     // }, 100)
 })
 
@@ -32,6 +38,7 @@ backgroundVideo.addEventListener('canplaythrough', function() {
 backgroundImage.onload = function() {
     setTimeout(function() {
         backgroundLoader.style.opacity = 0;
+        textLoader.style.opacity = 0;
     }, 100)
 }
 
@@ -188,6 +195,7 @@ async function checkWeather(wilayah) {
     // listAllDataHours[0][0].onDisplay();
 }
 
+// getListTime(data2);
 checkWeather(defaultWilayah);
 
 search.addEventListener('submit', function(event) {
@@ -214,11 +222,9 @@ dayCards.forEach((dayCard, index) => {
         resetAllDayCards();
         setOneDayCard(index); // Pass the index directly
     });
-
-    dayCard.addEventListener('dblclick', function() {
-        setOneDayCard(index);
-    })
 });
+
+
 
 function resetAllDayCards() {
     dayCards.forEach((dayCard, index) => {
