@@ -11,7 +11,7 @@
     backdrop-filter: blur(7px) brightness(80%);
     transition: all 1s ease-out;
     text-align: center;
-/*     z-index:  */
+    z-index: 2;
 
     & p {
         color: white;
