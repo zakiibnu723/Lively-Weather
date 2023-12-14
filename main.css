@@ -107,8 +107,11 @@ body {
 }
 
 .redirect {
-    grid-area: a;
-/*     pointer-events: none; */
+    position: fixed;
+	top: 10px;
+		left: 10px;
+	z-index: 999999;
+	/*     pointer-events: none; */
 
     .github {
         display: inline-block;
