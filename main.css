@@ -535,7 +535,7 @@ body {
     }
     .search {
         grid-area: a;
-        grid-template-columns: 75%;
+        grid-template-columns: 65%;
         
         & form input {font-size: 10px;}
     }
