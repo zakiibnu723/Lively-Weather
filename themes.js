@@ -31,7 +31,7 @@ class DayThemes {
         this.jmlFile = {
             cerah : 2,
             berawan : 4,
-            sebagianberawan : 9,
+            sebagianberawan : 8,
             hujan : 4,
             badaipetir : 2,
             salju : 3,
