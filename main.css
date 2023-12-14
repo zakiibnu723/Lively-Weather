@@ -522,8 +522,8 @@ body {
 
     .background-loader {
         & p {
-            font-size: 14px;
-            margin-left: -45px;
+            font-size: 10px;
+            margin-left: -36px;
         }
     }
     .redirect {
