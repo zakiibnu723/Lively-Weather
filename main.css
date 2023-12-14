@@ -116,7 +116,7 @@ body {
 	gap: 3px;
 	    
 	&:hover {
-                filter: brightness(70%);
+                filter: brightness(80%);
         }
         
         & img {
