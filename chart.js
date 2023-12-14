@@ -185,7 +185,7 @@ function generateChart(suhu, tanggal) {
             },
             tooltips: {
                 mode: 'nearest',
-                intersect: true,
+                intersect: false,
             },
             
             onTouch: function(event, elements) {
