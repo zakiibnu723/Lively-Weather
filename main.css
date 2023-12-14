@@ -521,13 +521,15 @@ body {
     }
 
     .redirect {
-	position: absolute;
+/* 	position: absolute;
 	top: 1.5%;
-	left: 2.5%;
+	left: 2.5%; */
+	display: flex;
+        align-items: center;
 	    
 	.github svg {
-            width: 28px;
-            height: 28px;
+            width: 30px;
+            height: 30px;
 	}
     }
     .search {
