@@ -12,15 +12,15 @@ function generateChart(suhu, tanggal) {
 
     let screen = window.matchMedia("(max-width: 480px)");
     
-    if (!screen.matches) {
-        for (let i = 0; i < 7; i++) {
-            suhu[i] = suhu[i].filter((element, index, array) => index % 3 === 0)
-            // tanggal[i] = tanggal[i].filter((element, index, array) => index % 3 === 0)
+    // if (screen.matches) {
+    //     for (let i = 0; i < 7; i++) {
+    //         suhu[i] = suhu[i].filter((element, index, array) => index % 3 === 0)
+    //         // tanggal[i] = tanggal[i].filter((element, index, array) => index % 3 === 0)
             
-        }
+    //     }
 
-        labels = labels.filter((element, index, array) => index % 3 === 0)
-    }
+    //     labels = labels.filter((element, index, array) => index % 3 === 0)
+    // }
 
 
 
