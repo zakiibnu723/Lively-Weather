@@ -162,8 +162,8 @@ function generateChart(suhu, tanggal) {
                     ticks: {
                         display: true,
                         color: '#ffffff',
-                        maxTicksLimit: 8,
-                        stepSize: 4,
+                        minTicksLimit: 4,
+                        // stepSize: 4,
                         beginAtZero: true
                     },
                     grid : {
@@ -179,6 +179,7 @@ function generateChart(suhu, tanggal) {
                     radius: 2,
                     hoverRadius: 7,
                     hitRadius: 10,
+                    yAlign: 'top',
                 }
             },
             tooltips: {
