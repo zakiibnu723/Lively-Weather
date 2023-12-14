@@ -120,16 +120,20 @@ body {
             width: 36px;
             height: 36px;
 
+	    &:hover {
+                filter: brightness(70%);
+            }
         }
 	    
 	& p {
 	    color: white;
 	    font-size: 12px;
+
+	    &:hover {
+                filter: brightness(70%);
+            }
 	}
         
-	&:hover {
-            filter: brightness(70%);
-        }
     }
 }
 
