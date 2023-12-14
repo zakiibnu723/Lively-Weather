@@ -114,26 +114,23 @@ body {
         display: flex;
 	align-items: center;
 	gap: 3px;
+	    
+	&:hover {
+                filter: brightness(70%);
+        }
         
         & img {
             transition: all 200ms ease-in-out;
             width: 36px;
             height: 36px;
 
-	    &:hover {
-                filter: brightness(70%);
-            }
+	    
         }
 	    
 	& p {
 	    color: white;
 	    font-size: 12px;
-
-	    &:hover {
-                filter: brightness(70%);
-            }
 	}
-        
     }
 }
 
