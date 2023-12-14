@@ -38,7 +38,7 @@ function generateChart(suhu, tanggal) {
                 backgroundColor: 'rgba(0, 234, 242, 0.157)',
                 borderColor: '#FFEA00',
                 lineTension: 0.5,
-                borderWidth: 1.5,
+                borderWidth: 2.5,
                 order: 2,
 
             }, {
@@ -49,7 +49,7 @@ function generateChart(suhu, tanggal) {
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
                 lineTension: 0.5,
-                borderWidth: 1.5,
+                borderWidth: 2.5,
                 hidden: true,
                 order: 0
 
@@ -61,7 +61,7 @@ function generateChart(suhu, tanggal) {
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
                 lineTension: 0.5,
-                borderWidth: 1.5,
+                borderWidth: 2.5,
                 hidden: true,
                 order: 0
 
@@ -73,7 +73,7 @@ function generateChart(suhu, tanggal) {
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
                 lineTension: 0.5,
-                borderWidth: 1.5,
+                borderWidth: 2.5,
                 hidden: true,
                 order: 0
 
@@ -85,7 +85,7 @@ function generateChart(suhu, tanggal) {
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
                 lineTension: 0.5,
-                borderWidth: 1.5,
+                borderWidth: 2.5,
                 hidden: true,
                 order: 0
 
@@ -97,7 +97,7 @@ function generateChart(suhu, tanggal) {
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
                 lineTension: 0.5,
-                borderWidth: 1.5,
+                borderWidth: 2.5,
                 hidden: true,
                 order: 0
 
@@ -109,7 +109,7 @@ function generateChart(suhu, tanggal) {
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
                 lineTension: 0.5,
-                borderWidth: 1.5,
+                borderWidth: 2.5,
                 hidden: true,
                 order: 0
             }]
@@ -180,7 +180,7 @@ function generateChart(suhu, tanggal) {
             },
             elements: {
                 point:{
-                    radius: 1.5,
+                    radius: 0,
                     hoverRadius: 7,
                     hitRadius: 10
                 }
