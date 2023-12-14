@@ -99,7 +99,24 @@ body {
     height: 100vh;
 }
 
+.redirect {
+    grid-area: a;
+    
+    .github {
+        display: inline-block;
+        
+        & svg {
+            transition: all 200ms ease-in-out;
+            width: 36px;
+            height: 36px;
 
+            &:hover {
+                /* transform: scaleX(-1); */
+                & g { fill : rgb(209, 209, 209);}
+            }
+        }
+    }
+}
 
 .search {
     display: grid;
@@ -351,7 +368,7 @@ body {
             gap: 10px;
             z-index: 999999;
             transition: all .2s ease-in-out; 
-
+            cursor: pointer;
 
             .tanggal {
                 font-size: 12px;
@@ -503,6 +520,10 @@ body {
 
     }
 
+    .redirect .github svg {
+        width: 16px;
+        height: 16px;
+    }
     .search {
         grid-area: a;
         grid-template-columns: 60%;

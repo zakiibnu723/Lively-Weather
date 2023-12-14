@@ -35,7 +35,7 @@ function generateChart(suhu, tanggal) {
                 data: suhu[0],
                 fill: true,
                 color: '#ffffff',
-                backgroundColor: 'rgba(0, 234, 242, 0.157)',
+                backgroundColor: 'rgba(105, 105, 105, 0.095)',
                 borderColor: '#FFEA00',
                 lineTension: 0.5,
                 borderWidth: 2.5,
@@ -47,7 +47,7 @@ function generateChart(suhu, tanggal) {
                 fill: true,
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
-                borderColor: 'rgba(105, 105, 105, 0.295)',
+                borderColor: 'rgba(105, 105, 105, 0.095)',
                 lineTension: 0.5,
                 borderWidth: 2.5,
                 hidden: true,
@@ -59,7 +59,7 @@ function generateChart(suhu, tanggal) {
                 fill: true,
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
-                borderColor: 'rgba(105, 105, 105, 0.295)',
+                borderColor: 'rgba(105, 105, 105, 0.095)',
                 lineTension: 0.5,
                 borderWidth: 2.5,
                 hidden: true,
@@ -71,7 +71,7 @@ function generateChart(suhu, tanggal) {
                 fill: true,
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
-                borderColor: 'rgba(105, 105, 105, 0.295)',
+                borderColor: 'rgba(105, 105, 105, 0.095)',
                 lineTension: 0.5,
                 borderWidth: 2.5,
                 hidden: true,
@@ -83,7 +83,7 @@ function generateChart(suhu, tanggal) {
                 fill: true,
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
-                borderColor: 'rgba(105, 105, 105, 0.295)',
+                borderColor: 'rgba(105, 105, 105, 0.095)',
                 lineTension: 0.5,
                 borderWidth: 2.5,
                 hidden: true,
@@ -95,7 +95,7 @@ function generateChart(suhu, tanggal) {
                 fill: true,
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
-                borderColor: 'rgba(105, 105, 105, 0.295)',
+                borderColor: 'rgba(105, 105, 105, 0.095)',
                 lineTension: 0.5,
                 borderWidth: 2.5,
                 hidden: true,
@@ -107,7 +107,7 @@ function generateChart(suhu, tanggal) {
                 fill: true,
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
-                borderColor: 'rgba(105, 105, 105, 0.295)',
+                borderColor: 'rgba(105, 105, 105, 0.095)',
                 lineTension: 0.5,
                 borderWidth: 2.5,
                 hidden: true,
@@ -149,7 +149,7 @@ function generateChart(suhu, tanggal) {
                         maxTicksLimit: 8,
                         beginAtZero: false,
                         font: {
-                            size: 8
+                            size: 9
                         }
                         // stepSize: 1
                     },
@@ -171,7 +171,7 @@ function generateChart(suhu, tanggal) {
                         stepSize: 4,
                         beginAtZero: true,
                         font: {
-                            size: 8
+                            size: 9
                         }
                     },
                     grid : {
