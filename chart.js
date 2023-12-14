@@ -148,7 +148,9 @@ function generateChart(suhu, tanggal) {
                         color: '#ffffff',
                         maxTicksLimit: 8,
                         beginAtZero: false,
-                        fontSize: 8
+                        font: {
+                            size: 8
+                        }
                         // stepSize: 1
                     },
                     grid : {
@@ -168,7 +170,9 @@ function generateChart(suhu, tanggal) {
                         maxTicksLimit: 8,
                         stepSize: 4,
                         beginAtZero: true,
-                        fontSize: 8
+                        font: {
+                            size: 8
+                        }
                     },
                     grid : {
                         color : '#70707053',
