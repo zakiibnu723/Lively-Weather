@@ -104,8 +104,6 @@ body {
     gap: 10px;
     background-color: rgba(245, 235, 235, 0.16);
     height: 100vh;
-	position: relative;
-	pointer-events: none;
 }
 
 .redirect {
