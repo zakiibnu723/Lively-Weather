@@ -542,6 +542,10 @@ body {
                 height: 32px;
         }
     }
+	.redirect .github img {
+        filter: none; /* Remove the filter on mobile */
+        pointer-events: auto; /* Ensure pointer events are enabled on mobile */
+    }
 	
     .search {
         grid-area: a;
