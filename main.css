@@ -117,13 +117,16 @@ body {
             width: 36px;
             height: 36px;
 
-	    
-
             @media screen and (min-width: 481px) {
                 &:hover {
                     filter: brightness(70%);
                 }
             }
+
+	& p {
+	    color: white;
+	}
+
         }
     }
 }
@@ -540,6 +543,8 @@ body {
                 width: 32px;
                 height: 32px;
         }
+
+	.github p { font-size: 10px; }
     }
 	.redirect .github img {
         filter: none; /* Remove the filter on mobile */
