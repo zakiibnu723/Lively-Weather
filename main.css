@@ -492,9 +492,9 @@ body {
         height: 100dvh;
     }
     .container {
-        padding: 10% 4% 24% 4%;
+        padding: 10% 4% 20% 4%;
         grid-template-columns: none;
-        grid-template-rows: 2fr 6fr 3fr 5fr;
+        grid-template-rows: 1fr 6fr 3fr 5fr;
         grid-template-areas: 
             'a'
             'b'
@@ -552,17 +552,17 @@ body {
             }
 
             .name {
-                font-size: 10px;
+                font-size: 9px;
             }
 
             .value {
-                font-size: 14px;
+                font-size: 13px;
             }
         }
 
         .left {
             .wilayah {
-                font-size: 28px;
+                font-size: 26px;
             }
         }
     }
