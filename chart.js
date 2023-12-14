@@ -180,7 +180,7 @@ function generateChart(suhu, tanggal) {
             },
             elements: {
                 point:{
-                    radius: 3,
+                    radius: 1.5,
                     hoverRadius: 7,
                     hitRadius: 10
                 }
