@@ -147,6 +147,7 @@ function generateChart(suhu, tanggal) {
                         display: true,
                         color: '#ffffff',
                         maxTicksLimit: 8,
+                        beginAtZero: false
                         // stepSize: 1
                     },
                     grid : {
@@ -187,6 +188,14 @@ function generateChart(suhu, tanggal) {
                 intersect: false,
             },
             
+            onTouch: function(event, elements) {
+                if (elements && elements.length > 0) {
+                    const firstElement = elements[0];
+
+                    DisplayDataHour(firstElement.datasetIndex, firstElement.index);
+                }
+            },
+
             onClick: function(event, elements) {
                 if (elements && elements.length > 0) {
                     const firstElement = elements[0];
@@ -194,6 +203,7 @@ function generateChart(suhu, tanggal) {
                     DisplayDataHour(firstElement.datasetIndex, firstElement.index);
                 }
             },
+
             
             aspectRatio : false,
             responsive: true,
