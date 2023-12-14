@@ -11,7 +11,7 @@
     backdrop-filter: blur(7px) brightness(80%);
     transition: all 1s ease-out;
     text-align: center;
-    z-index: 99
+/*     z-index:  */
 
     & p {
         color: white;
@@ -23,7 +23,7 @@
         margin-left: -75px;
         top: 55%;
         left: 50%;
-        z-index: 2;
+        z-index: 99;
     }
 
     & svg {
