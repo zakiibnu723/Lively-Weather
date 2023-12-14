@@ -77,7 +77,6 @@ body {
         background-color: rgba(248, 248, 248, 0);
         filter: grayscale(0.4) brightness(80%);
         /* transition: 2s; */
-	    pointer-events: none;
     }
 
     #background-image {
@@ -87,7 +86,6 @@ body {
         object-fit: cover;
         z-index: -1;
         height: auto;
-	    pointer-events: none;
     }
 }
 
@@ -104,16 +102,13 @@ body {
     gap: 10px;
     background-color: rgba(245, 235, 235, 0.16);
     height: 100vh;
-    position: relative;
 	
 }
 
 .redirect {
     position: absolute;
-	top: 10px;
-		left: 10px;
-/* 	z-index: 999999; */
-	/*     pointer-events: none; */
+    top: 12vw;
+    left: 8vw;
 
     .github {
         display: inline-block;
