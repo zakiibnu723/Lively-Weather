@@ -10,17 +10,19 @@ function generateChart(suhu, tanggal) {
         '20.00', '21.00', '22.00', '23.00', 
     ]
 
-    // let screen = window.matchMedia("(max-width: 480px)");
+    let screen = window.matchMedia("(max-width: 480px)");
     
-    // // if (screen.matches) {
-    // //     for (let i = 0; i < 7; i++) {
-    // //         suhu[i] = suhu[i].filter((element, index, array) => index % 3 === 0)
-    // //         // tanggal[i] = tanggal[i].filter((element, index, array) => index % 3 === 0)
+    if (!screen.matches) {
+        for (let i = 0; i < 7; i++) {
+            suhu[i] = suhu[i].filter((element, index, array) => index % 3 === 0)
+            // tanggal[i] = tanggal[i].filter((element, index, array) => index % 3 === 0)
             
-    // //     }
+        }
 
-    // //     labels = labels.filter((element, index, array) => index % 3 === 0)
-    // // }
+        labels = labels.filter((element, index, array) => index % 3 === 0)
+    }
+
+
 
     const ctx = myChart.getContext('2d');
     chart = new Chart(ctx, {
@@ -145,7 +147,8 @@ function generateChart(suhu, tanggal) {
                         display: true,
                         color: '#ffffff',
                         maxTicksLimit: 8,
-                        beginAtZero: false
+                        beginAtZero: false,
+                        fontSize: 8
                         // stepSize: 1
                     },
                     grid : {
@@ -162,9 +165,10 @@ function generateChart(suhu, tanggal) {
                     ticks: {
                         display: true,
                         color: '#ffffff',
-                        minTicksLimit: 4,
-                        // stepSize: 4,
-                        beginAtZero: true
+                        maxTicksLimit: 8,
+                        stepSize: 4,
+                        beginAtZero: true,
+                        fontSize: 8
                     },
                     grid : {
                         color : '#70707053',
@@ -176,15 +180,15 @@ function generateChart(suhu, tanggal) {
             },
             elements: {
                 point:{
-                    radius: 2,
+                    radius: 3,
                     hoverRadius: 7,
-                    hitRadius: 10,
-                    yAlign: 'top',
+                    hitRadius: 10
                 }
             },
-            tooltips: {
+            tooltip: {
                 mode: 'point',
-                intersect: false,
+                intersect: true,
+                // backgroundColor: 'rgba(0, 0, 0, 0.5)',
             },
             
             onTouchStart: function(event, elements) {
@@ -194,13 +198,7 @@ function generateChart(suhu, tanggal) {
                     DisplayDataHour(firstElement.datasetIndex, firstElement.index);
                 }
             },
-            onTouchMove: function(event, elements) {
-                if (elements && elements.length > 0) {
-                    const firstElement = elements[0];
 
-                    DisplayDataHour(firstElement.datasetIndex, firstElement.index);
-                }
-            },
             onClick: function(event, elements) {
                 if (elements && elements.length > 0) {
                     const firstElement = elements[0];
@@ -215,9 +213,7 @@ function generateChart(suhu, tanggal) {
             maintainAspectRatio: false,
             width: 3200,
             height: 250,
-            chartArea: {
-            backgroundColor: 'rgba(251, 85, 85, 0.4)'
-    }
+            // chartArea: { backgroundColor: 'rgba(251, 85, 85, 0.4)'}
         },
         
     });

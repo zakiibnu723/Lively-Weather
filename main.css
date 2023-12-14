@@ -70,7 +70,7 @@ body {
         object-fit: cover;
         z-index: -1;
         background-color: rgba(248, 248, 248, 0);
-        filter: grayscale(0.4);
+        filter: grayscale(0.4) brightness(80%);
         /* transition: 2s; */
     }
 
@@ -104,36 +104,41 @@ body {
 .search {
     display: grid;
     grid-template-columns: 50%;
-    /* align-items: start; */
+    align-items: center;
     justify-content: right;
     grid-area: b;
     position: relative;
     width: 100%;
 
-    & input[type=text] {
-        width: 100%;
-        height: min-content;
-        padding: 7px 25px 7px 10px;
-        color: rgba(255, 255, 255, 0.657);
-        font-size: 13px;
-        border-width: 0 0 1.5px 0;
-        border-color: rgba(255, 255, 255, 0.666);
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        background-color: rgba(0, 0, 0, 0.076);
-        outline: none;
-        caret-color: rgba(255, 255, 255, 0.685);
-        backdrop-filter: blur(20px);
-    }
-
-    & button {
-        position: absolute;
-        top: 7px;
-        right: 7px;
-        background-color: rgba(245, 222, 179, 0);
-        border: none;
-        /* display: none; */
-        cursor: pointer;
+    & form {
+        position: relative;
+        height: fit-content;
+        
+        & input[type=text] {
+            width: 100%;
+            height: min-content;
+            padding: 7px 25px 7px 10px;
+            color: rgba(255, 255, 255, 0.657);
+            font-size: 12px;
+            border-width: 0 0 1.5px 0;
+            border-color: rgba(255, 255, 255, 0.666);
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            background-color: rgba(0, 0, 0, 0.076);
+            outline: none;
+            caret-color: rgba(255, 255, 255, 0.685);
+            backdrop-filter: blur(20px);
+        }
+    
+        & button {
+            position: absolute;
+            top: 7px;
+            right: 7px;
+            background-color: rgba(245, 222, 179, 0);
+            border: none;
+            /* display: none; */
+            cursor: pointer;
+        }
     }
 }
 ::placeholder {
@@ -487,9 +492,9 @@ body {
         height: 100dvh;
     }
     .container {
-        padding: 10% 4% 20% 4%;
+        padding: 10% 4% 24% 4%;
         grid-template-columns: none;
-        grid-template-rows: 1fr 6fr 3.5fr 5fr;
+        grid-template-rows: 2fr 6fr 3fr 5fr;
         grid-template-areas: 
             'a'
             'b'
@@ -500,6 +505,9 @@ body {
 
     .search {
         grid-area: a;
+        grid-template-columns: 60%;
+        
+        & form input {font-size: 10px;}
     }
 
     .forecast-now {
