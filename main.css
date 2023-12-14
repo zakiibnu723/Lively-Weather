@@ -108,7 +108,7 @@ body {
 
 .redirect {
     grid-area: a;
-    pointer-events: none;
+/*     pointer-events: none; */
 
     .github {
         display: inline-block;
