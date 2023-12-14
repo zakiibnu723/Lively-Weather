@@ -110,7 +110,7 @@ body {
     z-index: 999;
 
     .github {
-        display: flex;
+        display: inline-block;
         
         & img {
             transition: all 200ms ease-in-out;
@@ -533,7 +533,7 @@ body {
     }
 
     .redirect {
-/*         display: flex; */
+        display: flex;
         align-items: center;
         margin-bottom: -5px;
         margin-left: 16px;
@@ -544,10 +544,6 @@ body {
         }
 
 	.github p { font-size: 10px; }
-    }
-	.redirect .github img {
-        filter: none; /* Remove the filter on mobile */
-        pointer-events: auto; /* Ensure pointer events are enabled on mobile */
     }
 	
     .search {
