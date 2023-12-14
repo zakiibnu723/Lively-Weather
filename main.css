@@ -487,9 +487,9 @@ body {
         height: 100dvh;
     }
     .container {
-        padding: 9% 3% 14% 3%;
+        padding: 10% 4% 20% 4%;
         grid-template-columns: none;
-        grid-template-rows: 1.5fr 5fr 2.5fr 5fr;
+        grid-template-rows: 1fr 6fr 3.5fr 5fr;
         grid-template-areas: 
             'a'
             'b'
@@ -562,10 +562,14 @@ body {
     .forecast-daily {
         grid-area: c;
 
-        .forecast-desc {font-size: 9px;}
+        .forecast-desc {
+	    font-size: 9px;
+	    margin: 0 2% 5% 4%;
+	}
 
         .daycard-box {
-            gap: 2.5px;
+            gap: 1px;
+	    padding: 4% 2%;
             
             .daycard {
                 padding: 8px;
@@ -574,8 +578,8 @@ body {
                     width: 70%;
                 }
     
-                .tanggal { font-size: 9px; }
-                .daytemp { font-size: 9px; }
+                .tanggal { font-size: min(8px); }
+                .daytemp { font-size: min(8px); }
             }
         }
     }
@@ -583,6 +587,7 @@ body {
     .forecast-hourly {
         grid-area: d;
 
+	.chart-container { margin: 0; }
     }
 
     .label p {font-size: 10px;}
