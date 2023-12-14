@@ -10,7 +10,7 @@ function generateChart(suhu, tanggal) {
         '20.00', '21.00', '22.00', '23.00', 
     ]
 
-    let screen = window.matchMedia("(max-width: 480px)");
+    // let screen = window.matchMedia("(max-width: 480px)");
     
     // if (screen.matches) {
     //     for (let i = 0; i < 7; i++) {
