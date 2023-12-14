@@ -184,7 +184,7 @@ function generateChart(suhu, tanggal) {
                 }
             },
             tooltips: {
-                mode: 'nearest',
+                mode: 'point',
                 intersect: false,
             },
             
