@@ -107,6 +107,7 @@ body {
 }
 
 .redirect {
+	grid-area: a;
     position: fixed;
 	top: 10px;
 		left: 10px;
