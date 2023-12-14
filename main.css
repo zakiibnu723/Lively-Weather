@@ -520,9 +520,15 @@ body {
 
     }
 
-    .redirect .github svg {
-        width: 16px;
-        height: 16px;
+    .redirect {
+	position: absolute;
+	top: 1.5%
+	left: 2.5%
+	    
+	.github svg {
+            width: 28px;
+            height: 28px;
+	}
     }
     .search {
         grid-area: a;
