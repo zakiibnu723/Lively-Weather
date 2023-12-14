@@ -109,8 +109,8 @@ body {
 
 .redirect {
     position: fixed;
-    top: 12vw;
-    left: 8vw;
+    top: 0vw;
+    left: 0vw;
 
     .github {
         display: inline-block;
