@@ -23,7 +23,6 @@
         margin-left: -75px;
         top: 55%;
         left: 50%;
-        z-index: 99;
     }
 
     & svg {
@@ -34,7 +33,6 @@
         width: 110px;
         left: 50%;
         top: 50%;
-        z-index: 99;
     }
 }
 
