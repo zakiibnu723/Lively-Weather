@@ -1,9 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     setTimeout(function() {
-//         document.querySelector('.preloader-container').style.display = 'none';
-//     }, 4000)
-// })
-
 const preloader = document.querySelector('.preloader-container');
 const backgroundLoader = document.querySelector('.background-loader')
 const textLoader = backgroundLoader.querySelector('p');
@@ -29,11 +23,6 @@ backgroundVideo.addEventListener('canplaythrough', function() {
 
     // }, 100)
 })
-
-
-// backgroundImage.addEventListener('load', function() {
-//     preloader.style.opacity = 1;
-// })
 
 backgroundImage.onload = function() {
     setTimeout(function() {
@@ -223,7 +212,6 @@ dayCards.forEach((dayCard, index) => {
         setOneDayCard(index); // Pass the index directly
     });
 });
-
 
 
 function resetAllDayCards() {
