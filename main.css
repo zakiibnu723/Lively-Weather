@@ -525,7 +525,7 @@ body {
 
     }
 
-    .redirect {
+/*     .redirect {
         display: flex;
         align-items: center;
         margin-bottom: -5px;
@@ -535,7 +535,7 @@ body {
                 width: 32px;
                 height: 32px;
         }
-    }
+    } */
     .search {
         grid-area: a;
         grid-template-columns: 60%;
