@@ -176,9 +176,9 @@ function generateChart(suhu, tanggal) {
             },
             elements: {
                 point:{
-                    radius: 3,
+                    radius: 2,
                     hoverRadius: 7,
-
+                    hitRadius: 10,
                 }
             },
             tooltips: {
@@ -193,7 +193,13 @@ function generateChart(suhu, tanggal) {
                     DisplayDataHour(firstElement.datasetIndex, firstElement.index);
                 }
             },
+            onTouchMove: function(event, elements) {
+                if (elements && elements.length > 0) {
+                    const firstElement = elements[0];
 
+                    DisplayDataHour(firstElement.datasetIndex, firstElement.index);
+                }
+            },
             onClick: function(event, elements) {
                 if (elements && elements.length > 0) {
                     const firstElement = elements[0];
