@@ -528,10 +528,10 @@ body {
     .redirect {
         display: flex;
         align-items: center;
+        margin-bottom: -5px;
+        margin-left: 16px;
             
         .github svg {
-                margin-bottom: -5px;
-                margin-left: 16px;
                 width: 32px;
                 height: 32px;
         }
