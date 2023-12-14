@@ -1,17 +1,7 @@
 
 function generateChart(suhu, tanggal) {
-    // Hapus chart lama jika ada
 
-    let screen = window.matchMedia("(max-width: 480px)");
-
-    if (screen.matches) {
-        suhu = suhu.filter((element, index, array) => index % 3 === 0)
-        tanggal = tanggal.filter((element, index, array) => index % 3 === 0)
-        labels = labels.filter((element, index, array) => index % 3 === 0)
-    }
-
-
-    const labels = [
+    let labels = [
         '00.00', '01.00', '02.00', '03.00', 
         '04.00', '05.00', '06.00', '07.00', 
         '08.00', '09.00', '10.00', '11.00', 
@@ -19,6 +9,20 @@ function generateChart(suhu, tanggal) {
         '16.00', '17.00', '18.00', '19.00', 
         '20.00', '21.00', '22.00', '23.00', 
     ]
+
+    let screen = window.matchMedia("(max-width: 480px)");
+    
+    if (screen.matches) {
+        for (let i = 0; i < 7; i++) {
+            suhu[i] = suhu[i].filter((element, index, array) => index % 3 === 0)
+            // tanggal[i] = tanggal[i].filter((element, index, array) => index % 3 === 0)
+            
+        }
+
+        labels = labels.filter((element, index, array) => index % 3 === 0)
+    }
+
+
 
     const ctx = myChart.getContext('2d');
     chart = new Chart(ctx, {
@@ -33,7 +37,7 @@ function generateChart(suhu, tanggal) {
                 color: '#ffffff',
                 backgroundColor: 'rgba(0, 234, 242, 0.157)',
                 borderColor: '#FFEA00',
-                lineTension: 0.6,
+                lineTension: 0.5,
                 borderWidth: 1.5,
                 order: 2,
 
@@ -44,7 +48,7 @@ function generateChart(suhu, tanggal) {
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
-                lineTension: 0.1,
+                lineTension: 0.5,
                 borderWidth: 1.5,
                 hidden: true,
                 order: 0
@@ -56,7 +60,7 @@ function generateChart(suhu, tanggal) {
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
-                lineTension: 0.1,
+                lineTension: 0.5,
                 borderWidth: 1.5,
                 hidden: true,
                 order: 0
@@ -68,7 +72,7 @@ function generateChart(suhu, tanggal) {
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
-                lineTension: 0.1,
+                lineTension: 0.5,
                 borderWidth: 1.5,
                 hidden: true,
                 order: 0
@@ -80,7 +84,7 @@ function generateChart(suhu, tanggal) {
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
-                lineTension: 0.1,
+                lineTension: 0.5,
                 borderWidth: 1.5,
                 hidden: true,
                 order: 0
@@ -92,7 +96,7 @@ function generateChart(suhu, tanggal) {
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
-                lineTension: 0.1,
+                lineTension: 0.5,
                 borderWidth: 1.5,
                 hidden: true,
                 order: 0
@@ -104,7 +108,7 @@ function generateChart(suhu, tanggal) {
                 color: '#ffffff',
                 backgroundColor: 'rgba(138, 138, 138, 0.035)',
                 borderColor: 'rgba(105, 105, 105, 0.295)',
-                lineTension: 0.1,
+                lineTension: 0.5,
                 borderWidth: 1.5,
                 hidden: true,
                 order: 0
