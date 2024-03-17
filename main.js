@@ -35,7 +35,7 @@ backgroundImage.onload = function() {
 
 
 
-const defaultWilayah = "yogyakarta";
+const defaultWilayah = "sukabumi";
 
 
 class DataSet {
