@@ -1,36 +1,38 @@
-Lively Weather ⛅
+# <h1><b>Lively Weather ⛅</b></h1>
 
-Lively Weather adalah aplikasi ramalan cuaca yang memungkinkan pengguna menjelajahi kondisi cuaca di berbagai wilayah secara global. Aplikasi ini didesain untuk menyajikan informasi cuaca secara dinamis, akurat, dan mudah dipahami dengan sejumlah fitur menarik.
+Lively Weather is a weather forecast application that allows users to explore weather conditions globally. Designed to provide dynamic, accurate, and easy-to-understand weather information, it comes with several exciting features.
 
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Chart.js
 
-tech: HTML5, CSS3, Javascript, Chart.js
+## API
+- [Visual Crossing Weather API](https://www.visualcrossing.com/)
 
-API: https://www.visualcrossing.com/
+## Key Features
 
-Fitur Utama
+### Global Location Search
+Users can search for weather information across various global locations, including countries, provinces, cities, and districts (note that some regions may not be available).
 
-1. Pencarian Lokasi Global
-Pengguna dapat mencari lokasi ke seluruh wilayah secara global, termasuk negara, provinsi, kota, dan kecamatan. (namun beberapa wilayah mungkin tidak tersedia)
-2. Waktu dan Tanggal Real-Time
-Tampilan waktu dan tanggal pada aplikasi disesuaikan dengan zona waktu wilayah yang dicari.
-3. Perubahan Tema Latar Belakang Dinamis
-Latar belakang aplikasi dapat berubah berdasarkan kondisi cuaca atau waktu. Tema akan disesuaikan dengan kondisi cuaca aktual dan jam berdasarkan waktu sunrice dan sunset.
-4. Ramalan 7x24 Jam
-Forecast Now: Menampilkan informasi cuaca real-time saat ini (note: delay 30-60 menit)
-Daily Forecast (Daycard): Representasi informasi cuaca harian dengan suhu min-max, ikon cuaca, dan prediksi cuaca sepanjang hari.
-Hourly Forecast (Grafik): Grafik interaktif yang menampilkan informasi cuaca setiap jam, memungkinkan pengguna melihat prediksi suhu secara rinci dengan mengklik jam tertentu.
+### Real-Time Date and Time
+The application's time and date display adjusts according to the timezone of the searched location.
 
+### Dynamic Background Theme Changes
+The application's background changes based on weather conditions or time. The theme adapts to actual weather conditions and time based on sunrise and sunset.
 
-Cara Menggunakan
+### 7x24 Hour Forecast
+- **Forecast Now:** Displays real-time weather information (note: delay of 30-60 minutes).
+- **Daily Forecast (Daycard):** Shows daily weather information with min-max temperatures, weather icons, and daily weather predictions.
+- **Hourly Forecast (Graph):** An interactive graph displaying hourly weather information, allowing users to see detailed temperature predictions by clicking on specific hours.
 
-1. Pencarian Lokasi:
-Masukkan nama atau koordinat wilayah yang ingin Anda ketahui ramalannya.
+## How to Use
 
-2. Tema Latar Belakang:
-Nikmati pengalaman visual dengan melihat perubahan tema latar belakang sesuai kondisi cuaca atau waktu.
+1. **Location Search:** Enter the name or coordinates of the location you want to check the weather for.
+2. **Background Theme:** Enjoy a visual experience with background theme changes according to weather conditions or time.
+3. **Weather Forecast:** Explore the forecast now, daily forecast (daycard), and hourly forecast (graph) to understand detailed weather conditions.
 
-3. Ramalan Cuaca:
-Telusuri forecast now, daily forecast (daycard), dan hourly forecast (grafik) untuk memahami kondisi cuaca lebih detail.
-Pengembangan dan Kontribusi
+## Development and Contributions
 
-
+Contributions to the project are welcome. Feel free to fork the repository and submit pull requests for any improvements or new features.
