@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model SearchHistory {
+  id              String   @id @default(uuid())
+  query           String
+  resolvedAddress String
+  temp            Float?
+  conditions      String?
+  createdAt       DateTime @default(now())
+}
+
+model FavoriteLocation {
+  id              String   @id @default(uuid())
+  name            String   @unique
+  resolvedAddress String
+  createdAt       DateTime @default(now())
+}
